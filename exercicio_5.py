@@ -26,14 +26,23 @@ def cadastrar_aluno(nome, email, serie, nota01=0, nota02=0, nota03=0):
 
     return alunos
 
-obter_dados_aluno()
-
 def mostrar_dados_alunos(dados_alunos):
     for aluno in dados_alunos:
         print(f"nome do aluno: {aluno["nome"]}")
     return
 
-mostrar_dados_alunos(alunos)
+def iniciar_sistema():
+    while True: 
+        print("="*80)
+        print("opção 1 => Mostrar lista de alunos cadastrados. ")
+        print("opção 2 => Cadastrar Alunos. ")
+        print("opção 3 => Sair do sistema. ")
+        print("="*80)
+
+        opcao = input("Escolha uma das opções acima: ")
+
+
+
 
 
 
